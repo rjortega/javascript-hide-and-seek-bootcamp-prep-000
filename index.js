@@ -24,7 +24,6 @@ function deepestChild(){
   var current = element.children
   var next = []
   while (current.length > 0) {
-    console.log(next, current.length)
       for (var i = 0; i < current.length; i++) {
         next = next.concat(current[i].children)
         console.warn("inside", next);
