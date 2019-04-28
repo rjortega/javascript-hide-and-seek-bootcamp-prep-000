@@ -27,7 +27,7 @@ function deepestChild(){
     console.log(next, current.length)
       for (var i = 0; i < current.length; i++) {
         next = next.concat(current[i].children)
-        console.warn("inside", next, current[i].children.length);
+        console.warn("inside", next);
       }
       current = next
   }
